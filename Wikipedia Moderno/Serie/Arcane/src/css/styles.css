@@ -1,0 +1,225 @@
+/* Reset de margens e padding para todos os elementos */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+    background-color: #d9cb9f; /* Cor de fundo para o corpo */
+    background-image: url('../img/arcane.jpg'); /* Imagem de fundo */
+    background-size: auto; /* Define o tamanho da imagem */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Fixando o fundo para não rolar */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    animation: fadeIn 3s ease-in-out; /* Animação de transição suave */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Começa com a opacidade 0 */
+    }
+    100% {
+        opacity: 1; /* Vai até a opacidade 1 */
+    }
+}
+
+/* Estilos para listas e links */
+ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding-left: 5px; /* Adiciona um pequeno espaço à esquerda */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in para listas */
+}
+
+/* Estilo para links */
+a {
+    color: blue; /* Cor azul para links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in para links */
+}
+
+/* Estilo para a linha de separação */
+hr {
+    border: none; /* Remove o estilo padrão da borda */
+    border-top: 1px solid #574126; /* Borda superior de 1px com cor */
+    margin: 20px 0; /* Espaçamento vertical de 20px */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in para hr */
+}
+
+/* Estilo para os títulos e parágrafos */
+h1, p {
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in para títulos e parágrafos */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Barra superior */
+.bar {
+    background-color: #574126; /* Cor de fundo da barra */
+    padding: 15px; /* Espaçamento interno */
+    border-top: solid 1px #574126; /* Borda superior */
+    border-bottom: solid 1px #574126; /* Borda inferior */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+/* Conteúdo central, com grid responsivo */
+.content {
+    max-width: 1440px; /* Largura máxima do conteúdo */
+    margin: auto; /* Centraliza o conteúdo */
+    grid-gap: 3rem; /* Espaçamento entre os itens do grid */
+    display: grid; /* Ativa o grid layout */
+    gap: 3rem; /* Espaçamento entre as colunas */
+    grid-template-areas: "sidebar main anchors"; /* Define as áreas do grid */
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem); /* Define as larguras das colunas */
+    padding-left: 1rem; /* Espaçamento à esquerda */
+    padding-right: 1rem; /* Espaçamento à direita */
+    background-color: #d9cb9f; /* Cor de fundo do conteúdo */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+/* Estilo do rodapé */
+.footer {
+    min-height: 100px; /* Altura mínima do rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    border-top: solid 1px #574126; /* Borda superior */
+    align-items: center; /* Centraliza os itens */
+    display: flex; /* Usa o modelo flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 4px; /* Altura do rodapé */
+    background-color: #574126; /* Cor de fundo do rodapé */
+    width: 100%; /* Largura total */
+    color: #fff; /* Cor do texto */
+    transform: scale(1.1); /* Aumenta o tamanho */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+/* âncoras para a navegação */
+.anchors a {
+    border-left: solid 1px #574126; /* Borda à esquerda */
+    padding-left: 15px; /* Espaçamento à esquerda */
+    color: #372918; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+.anchors a:hover {
+    color: #64635d; /* Cor do texto ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado no hover */
+    font-weight: normal; /* Normaliza o peso da fonte */
+}
+
+/* Sidebar */
+.sidebar {
+    border-right: solid 1px #574126; /* Borda à direita */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+/* Estilo para figuras */
+figure {
+    text-align: center; /* Centraliza o conteúdo das figuras */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+img {
+    transition: transform 0.5s ease; /* Transição suave ao transformar */
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Logo centralizado */
+.logo {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: center; /* Alinha ao centro */
+    align-items: center; /* Alinha ao centro verticalmente */
+    background-color: #d9cb9f; /* Cor de fundo */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+/* Estilo principal da área do conteúdo */
+.main {
+    background-color: #f9f9fb; /* Cor de fundo */
+    display: block; /* Exibição como bloco */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 10px; /* Margem superior */
+    margin-bottom: 10px; /* Margem inferior */
+    border: 2px #574126 solid; /* Borda de 2px */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #372918; /* Cor do texto */
+    animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+}
+
+/* Media Queries para responsividade */
+
+/* Tela menor que 768px (celulares) */
+@media (max-width: 768px) {
+    .content {
+        grid-template-areas:
+            "main"
+            "sidebar"
+            "anchors"; /* Organiza o layout para dispositivos móveis */
+        grid-template-columns: 1fr; /* Uma coluna para celulares */
+        padding-left: 1rem; /* Ajuste do padding */
+        padding-right: 1rem; /* Ajuste do padding */
+        animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+    }
+
+    .bar {
+        padding: 10px; /* Ajuste no padding da barra */
+        animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+    }
+
+    .logo img {
+        width: 150px; /* Reduz o tamanho da logo em telas menores */
+    }
+
+    .main {
+        font-size: 16px; /* Diminui o tamanho da fonte */
+        animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+    }
+}
+
+/* Tela entre 768px e 1024px (tablets e telas médias) */
+@media (max-width: 1024px) {
+    .content {
+        grid-template-areas:
+            "sidebar main"
+            "anchors main"; /* Ajuste do layout para tablets */
+        grid-template-columns: 1fr 2fr; /* Colunas ajustadas para tablets */
+        animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+    }
+
+    .bar {
+        padding: 12px; /* Ajuste no padding da barra */
+        animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+    }
+
+    .logo img {
+        width: 180px; /* Ajuste no tamanho da logo */
+    }
+
+    .main {
+        font-size: 17px; /* Ajuste no tamanho da fonte */
+        animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+    }
+}
+
+/* Tela maior que 1440px (telas grandes) */
+@media (min-width: 1440px) {
+    .content {
+        grid-template-areas: "sidebar main anchors"; /* Mantém layout para telas grandes */
+        grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem); /* Colunas fixas */
+        animation: fadeIn 1.5s ease-in-out; /* Animação de fade-in */
+    }
+} 
+
+/* Animação para o efeito de deslizamento */
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Começa invisível */
+        transform: translateX(-100%, 0); /* Começa fora da tela */
+    }
+    to {
+        opacity: 1; /* Fica totalmente visível */
+        transform: translateX(0, 0); /* Volta para a posição original */
+    }
+}
